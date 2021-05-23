@@ -20,7 +20,7 @@ check_food
 respawn_food 
 food_eaten 
 
-Section 5 : 
+Section 5 : Finishing touches (remove all comments)
 snake_death
 restart 
 update_score
