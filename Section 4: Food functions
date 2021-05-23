@@ -3,6 +3,7 @@
 
 #uncommented section 3 + (food_eaten) in update_snake() 
 
+#Section 1 : Global variables
 from tkinter import *
 from random import *
 from time import *
@@ -39,8 +40,7 @@ direction = 'W'
 in_game = True
 
 
-#Section 1: Ui
-# Game loop
+#Section 2 : UI
 
 def game_loop():
     #update_score()
@@ -75,7 +75,7 @@ def update_board():
     root.update()
     board.delete('all')
 
-# Section 2 : Snake movement
+# Section 3 : Snake movement
 
 #keyboard inputs
 def on_press(key):
@@ -144,7 +144,7 @@ def snake_death():
         in_game = False
 '''
 
-# Section 3 : Food functions
+# Section 4 : Food functions
 
 def food_eaten():
     global snake
@@ -174,7 +174,7 @@ def check_food():
         else:
             pass
 
-#Section 4: Putting everything together
+#Section 5: Finishing touches
 
 '''
 def update_score():
@@ -185,7 +185,6 @@ def update_score():
     score.grid()
 '''
 
-#post_game_menu()
 '''
 def post_game_menu():
     global snake
